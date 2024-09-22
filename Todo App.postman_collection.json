@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "82e164b8-e833-470a-b6cc-e6323fe82c97",
+		"name": "Todo App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33236728"
+	},
+	"item": [
+		{
+			"name": "AddNewTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"My Day 3\",\r\n    \"IsComplete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:32768/todoitems/ "
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodoItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:32768/todoitems"
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodoItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:32768/todoitems/1"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTodoItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\" : \"My Day 1-updated\",\r\n    \"IsComplete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost:32768/todoitems/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodoItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://localhost:32768/todoitems/2"
+			},
+			"response": []
+		}
+	]
+}
